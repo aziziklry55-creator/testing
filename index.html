@@ -1,1 +1,160 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111a30;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 7vw, 65px);
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #b8c4d9;
+            max-width: 600px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #0284c7;
+            color: white;
+            padding: 13px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 65px 8%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #17233b;
+            padding: 25px;
+            margin: 15px auto;
+            border-radius: 12px;
+            max-width: 650px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background: #111a30;
+            color: #9caec5;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>MY WEBSITE</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Welcome to <span>My Website</span></h1>
+        <p>A modern website built with HTML and CSS and hosted for free on GitHub Pages.</p>
+        <a href="#about" class="button">Explore Website</a>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card">
+            <p>Welcome! This is my personal website. Here you can learn more about me and what I do.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>My Services</h2>
+        <div class="card">
+            <h3>Professional Services</h3>
+            <p>Add your services and information here.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="card">
+            <p>Email: your-email@example.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 My Website. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
